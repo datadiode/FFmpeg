@@ -252,9 +252,6 @@
     <ClCompile Include="..\libavutil\hwcontext_dxva2.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\hwcontext_qsv.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\lzo.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>

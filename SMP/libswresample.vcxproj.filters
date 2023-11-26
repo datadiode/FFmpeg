@@ -63,9 +63,6 @@
     <ClCompile Include="..\libswresample\swresample_frame.c">
       <Filter>Source Files\libswresample</Filter>
     </ClCompile>
-    <ClCompile Include="..\libswresample\soxr_resample.c">
-      <Filter>Source Files\libswresample</Filter>
-    </ClCompile>
     <ClCompile Include="..\libswresample\x86\audio_convert_init.c">
       <Filter>Source Files\libswresample\x86</Filter>
     </ClCompile>

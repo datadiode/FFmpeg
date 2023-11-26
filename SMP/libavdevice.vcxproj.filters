@@ -70,16 +70,7 @@
     <ClCompile Include="..\libavdevice\lavfi.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavdevice\opengl_enc.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavdevice\sdl2.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavdevice\vfwcap.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavdevice\libcdio.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
     <ClCompile Include="libavdevice\reverse_wrap.c">

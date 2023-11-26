@@ -22,6 +22,17 @@
 #include "config.h"
 
 #include "libavformat/avformat.h"
+#include "libavformat/rtmpcrypt.h"
 
+int ff_rtmpe_compute_secret_key(URLContext *h, const uint8_t *serverdata,
+                                const uint8_t *clientdata, int type) {return 0;}
+int ff_rtmpe_gen_pub_key(URLContext *h, uint8_t *buf) {return 0;}
+int ff_rtmpe_update_keystream(URLContext *h) {return 0;}
+void ff_rtmpe_encrypt_sig(URLContext *h, uint8_t *signature,
+                          const uint8_t *digest, int type) {return;}
+const AVInputFormat ff_avisynth_demuxer = {0};
+const AVInputFormat ff_dash_demuxer = {0};
+const AVInputFormat ff_libgme_demuxer = {0};
+const AVInputFormat ff_libmodplug_demuxer = {0};
 const AVInputFormat ff_libopenmpt_demuxer = {0};
 const AVOutputFormat ff_chromaprint_muxer = {0};

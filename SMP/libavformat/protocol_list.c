@@ -20,12 +20,10 @@
  */
 static const URLProtocol *url_protocols[] = {
     &ff_async_protocol,
-    &ff_bluray_protocol,
     &ff_cache_protocol,
     &ff_concat_protocol,
     &ff_crypto_protocol,
     &ff_data_protocol,
-    &ff_ffrtmpcrypt_protocol,
     &ff_ffrtmphttp_protocol,
     &ff_file_protocol,
     &ff_ftp_protocol,
@@ -41,10 +39,8 @@ static const URLProtocol *url_protocols[] = {
     &ff_pipe_protocol,
     &ff_prompeg_protocol,
     &ff_rtmp_protocol,
-    &ff_rtmpe_protocol,
     &ff_rtmps_protocol,
     &ff_rtmpt_protocol,
-    &ff_rtmpte_protocol,
     &ff_rtmpts_protocol,
     &ff_rtp_protocol,
     &ff_srtp_protocol,
@@ -54,5 +50,4 @@ static const URLProtocol *url_protocols[] = {
     &ff_tls_protocol,
     &ff_udp_protocol,
     &ff_udplite_protocol,
-    &ff_libssh_protocol,
     NULL };
