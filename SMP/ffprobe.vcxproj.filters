@@ -21,14 +21,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\fftools\cmdutils.c">
-      <Filter>Source Files\fftools</Filter>
-    </ClCompile>
-    <ClCompile Include="..\fftools\ffprobe.c">
-      <Filter>Source Files\fftools</Filter>
-    </ClCompile>
     <ClCompile Include="ffprobe\dce_defs.c">
       <Filter>Source Files\ffprobe</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\fftools\ffprobe.c">
+      <Filter>Source Files\fftools</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\fftools\cmdutils.c">
+      <Filter>Source Files\fftools</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>

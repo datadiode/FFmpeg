@@ -19,7 +19,11 @@
 #ifndef COMPAT_W32DLFCN_H
 #define COMPAT_W32DLFCN_H
 
-#ifdef _WIN32
+#ifdef _WIN32_WCE
+#define dlopen(name, flags) ((HMODULE)0)
+#define dlclose FreeLibrary
+#define dlsym GetProcAddressA
+#elif defined(_WIN32)
 #include <windows.h>
 #include "config.h"
 #if (_WIN32_WINNT < 0x0602) || HAVE_WINRT

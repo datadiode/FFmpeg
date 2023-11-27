@@ -301,7 +301,7 @@ static void log_callback(void *ptr, int level, const char *fmt, va_list vl)
     static int print_prefix = 1;
     void *new_log_buffer;
 
-    va_copy(vl2, vl);
+    va_start(vl2, vl);
     av_log_default_callback(ptr, level, fmt, vl);
     av_log_format_line(ptr, level, fmt, vl2, line, sizeof(line), &print_prefix);
     va_end(vl2);

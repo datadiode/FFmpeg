@@ -119,7 +119,7 @@ static void log_callback_report(void *ptr, int level, const char *fmt, va_list v
 
 void init_dynload(void)
 {
-#ifdef _WIN32
+#if defined(_WIN32) && !defined(_WIN32_WCE)
     /* Calling SetDllDirectory with the empty string (but not NULL) removes the
      * current working directory from the DLL search path as a security pre-caution. */
     SetDllDirectory("");
@@ -231,7 +231,7 @@ static const OptionDef *find_option(const OptionDef *po, const char *name)
 /* _WIN32 means using the windows libc - cygwin doesn't define that
  * by default. HAVE_COMMANDLINETOARGVW is true on cygwin, while
  * it doesn't provide the actual command line via GetCommandLineW(). */
-#if HAVE_COMMANDLINETOARGVW && defined(_WIN32)
+#if HAVE_COMMANDLINETOARGVW && defined(_WIN32) && !defined(_WIN32_WCE)
 #include <shellapi.h>
 /* Will be leaked on exit */
 static char** win32_argv_utf8 = NULL;
@@ -1956,7 +1956,7 @@ FILE *get_preset_file(char *filename, size_t filename_size,
         av_strlcpy(filename, preset_name, filename_size);
         f = fopen(filename, "r");
     } else {
-#ifdef _WIN32
+#if defined(_WIN32) && !defined(_WIN32_WCE)
         char datadir[MAX_PATH], *ls;
         base[2] = NULL;
 

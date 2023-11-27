@@ -555,7 +555,7 @@ static int ebur128_gated_loudness(FFEBUR128State ** sts, size_t size,
             return AVERROR(EINVAL);
 
     if (!ebur128_calc_relative_threshold(sts, size, &relative_threshold)) {
-        *out = -HUGE_VAL;
+        *out = -DBL_MAX;
         return 0;
     }
 
@@ -576,7 +576,7 @@ static int ebur128_gated_loudness(FFEBUR128State ** sts, size_t size,
         }
     }
     if (!above_thresh_counter) {
-        *out = -HUGE_VAL;
+        *out = -DBL_MAX;
         return 0;
     }
     gated_loudness /= (double) above_thresh_counter;
@@ -635,7 +635,7 @@ int ff_ebur128_loudness_momentary(FFEBUR128State * st, double *out)
     if (error) {
         return error;
     } else if (energy <= 0.0) {
-        *out = -HUGE_VAL;
+        *out = -DBL_MAX;
         return 0;
     }
     *out = ebur128_energy_to_loudness(energy);
@@ -649,7 +649,7 @@ int ff_ebur128_loudness_shortterm(FFEBUR128State * st, double *out)
     if (error) {
         return error;
     } else if (energy <= 0.0) {
-        *out = -HUGE_VAL;
+        *out = -DBL_MAX;
         return 0;
     }
     *out = ebur128_energy_to_loudness(energy);
@@ -665,7 +665,7 @@ int ff_ebur128_loudness_window(FFEBUR128State * st,
     if (error) {
         return error;
     } else if (energy <= 0.0) {
-        *out = -HUGE_VAL;
+        *out = -DBL_MAX;
         return 0;
     }
     *out = ebur128_energy_to_loudness(energy);

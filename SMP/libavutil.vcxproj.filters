@@ -28,6 +28,9 @@
     <Filter Include="Source Files\libavutil\x86">
       <UniqueIdentifier>{a2d068fe-f5d5-4b6f-95d4-f15631533341}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\compat\libc">
+      <UniqueIdentifier>{431dfaa3-c654-429f-b5c3-42292bba23c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include=".\libavutil.def">
@@ -66,9 +69,6 @@
     <ClCompile Include="..\libavutil\adler32.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\aes.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\aes_ctr.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
@@ -96,19 +96,10 @@
     <ClCompile Include="..\libavutil\camellia.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\channel_layout.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\color_utils.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\cpu.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\crc.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\des.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\dict.c">
@@ -123,28 +114,10 @@
     <ClCompile Include="..\libavutil\error.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\eval.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\fifo.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\file.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\file_open.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\frame.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\hash.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\hmac.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\hwcontext.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\integer.c">
@@ -156,13 +129,7 @@
     <ClCompile Include="..\libavutil\lfg.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\log.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\log2_tab.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\mathematics.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\mastering_display_metadata.c">
@@ -171,25 +138,13 @@
     <ClCompile Include="..\libavutil\md5.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\mem.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\murmur3.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\opt.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\parseutils.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\pixdesc.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\random_seed.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\rational.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\reverse.c">
@@ -201,9 +156,6 @@
     <ClCompile Include="..\libavutil\ripemd.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\samplefmt.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\sha.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
@@ -211,12 +163,6 @@
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\slicethread.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\spherical.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\stereo3d.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\threadmessage.c">
@@ -234,9 +180,6 @@
     <ClCompile Include="..\libavutil\twofish.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\utils.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\xga_font_data.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
@@ -244,9 +187,6 @@
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\tea.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavutil\hwcontext_cuda.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
     <ClCompile Include="..\libavutil\hwcontext_dxva2.c">
@@ -291,9 +231,6 @@
     <ClCompile Include="..\libavutil\fixed_dsp.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavutil\imgutils.c">
-      <Filter>Source Files\libavutil</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavutil\lls.c">
       <Filter>Source Files\libavutil</Filter>
     </ClCompile>
@@ -302,6 +239,18 @@
     </ClCompile>
     <ClCompile Include="..\libavutil\x86\cpu.c">
       <Filter>Source Files\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\libc\libc.c">
+      <Filter>Source Files\compat\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\libc\stat.c">
+      <Filter>Source Files\compat\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\libc\timeutil.c">
+      <Filter>Source Files\compat\libc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\libc\tempnam.c">
+      <Filter>Source Files\compat\libc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -539,5 +488,73 @@
     <ClInclude Include="libavutil\ffversion.h">
       <Filter>Header Files\libavutil</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\libavutil\channel_layout.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\aes.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\hash.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\eval.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\des.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\hwcontext.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\log.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\frame.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\mathematics.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\pixdesc.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\samplefmt.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\rational.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\utils.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\opt.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\stereo3d.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\spherical.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\mem.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\cpu.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\file.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\file_open.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\hwcontext_cuda.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavutil\imgutils.c">
+      <Filter>Source Files\libavutil</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>

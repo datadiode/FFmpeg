@@ -464,8 +464,8 @@ int ff_img_read_packet(AVFormatContext *s1, AVPacket *pkt)
     pkt->stream_index = 0;
     pkt->flags       |= AV_PKT_FLAG_KEY;
     if (s->ts_from_file) {
-        struct stat img_stat;
-        if (stat(filename, &img_stat)) {
+        struct _stat img_stat;
+        if (_stat(filename, &img_stat)) {
             res = AVERROR(EIO);
             goto fail;
         }

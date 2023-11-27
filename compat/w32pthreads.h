@@ -133,52 +133,6 @@ static inline int pthread_mutex_unlock(pthread_mutex_t *m)
     return 0;
 }
 
-#if _WIN32_WINNT >= 0x0600
-typedef INIT_ONCE pthread_once_t;
-#define PTHREAD_ONCE_INIT INIT_ONCE_STATIC_INIT
-
-static av_unused int pthread_once(pthread_once_t *once_control, void (*init_routine)(void))
-{
-    BOOL pending = FALSE;
-    InitOnceBeginInitialize(once_control, 0, &pending, NULL);
-    if (pending)
-        init_routine();
-    InitOnceComplete(once_control, 0, NULL);
-    return 0;
-}
-
-static inline int pthread_cond_init(pthread_cond_t *cond, const void *unused_attr)
-{
-    InitializeConditionVariable(cond);
-    return 0;
-}
-
-/* native condition variables do not destroy */
-static inline int pthread_cond_destroy(pthread_cond_t *cond)
-{
-    return 0;
-}
-
-static inline int pthread_cond_broadcast(pthread_cond_t *cond)
-{
-    WakeAllConditionVariable(cond);
-    return 0;
-}
-
-static inline int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mutex)
-{
-    SleepConditionVariableCS(cond, mutex, INFINITE);
-    return 0;
-}
-
-static inline int pthread_cond_signal(pthread_cond_t *cond)
-{
-    WakeConditionVariable(cond);
-    return 0;
-}
-
-#else // _WIN32_WINNT < 0x0600
-
 /* atomic init state of dynamically loaded functions */
 static LONG w32thread_init_state = 0;
 static av_unused void w32thread_init(void);
@@ -251,23 +205,11 @@ typedef struct  win32_cond_t {
     volatile int is_broadcast;
 } win32_cond_t;
 
-/* function pointers to conditional variable API on windows 6.0+ kernels */
-static void (WINAPI *cond_broadcast)(pthread_cond_t *cond);
-static void (WINAPI *cond_init)(pthread_cond_t *cond);
-static void (WINAPI *cond_signal)(pthread_cond_t *cond);
-static BOOL (WINAPI *cond_wait)(pthread_cond_t *cond, pthread_mutex_t *mutex,
-                                DWORD milliseconds);
-
 static av_unused int pthread_cond_init(pthread_cond_t *cond, const void *unused_attr)
 {
     win32_cond_t *win32_cond = NULL;
 
     w32thread_once_fallback(&w32thread_init_state, w32thread_init);
-
-    if (cond_init) {
-        cond_init(cond);
-        return 0;
-    }
 
     /* non native condition variables */
     win32_cond = (win32_cond_t*)av_mallocz(sizeof(win32_cond_t));
@@ -289,9 +231,6 @@ static av_unused int pthread_cond_init(pthread_cond_t *cond, const void *unused_
 static av_unused int pthread_cond_destroy(pthread_cond_t *cond)
 {
     win32_cond_t *win32_cond = (win32_cond_t*)cond->Ptr;
-    /* native condition variables do not destroy */
-    if (cond_init)
-        return 0;
 
     /* non native condition variables */
     CloseHandle(win32_cond->semaphore);
@@ -307,11 +246,6 @@ static av_unused int pthread_cond_broadcast(pthread_cond_t *cond)
 {
     win32_cond_t *win32_cond = (win32_cond_t*)cond->Ptr;
     int have_waiter;
-
-    if (cond_broadcast) {
-        cond_broadcast(cond);
-        return 0;
-    }
 
     /* non native condition variables */
     pthread_mutex_lock(&win32_cond->mtx_broadcast);
@@ -339,10 +273,6 @@ static av_unused int pthread_cond_wait(pthread_cond_t *cond, pthread_mutex_t *mu
 {
     win32_cond_t *win32_cond = (win32_cond_t*)cond->Ptr;
     int last_waiter;
-    if (cond_wait) {
-        cond_wait(cond, mutex, INFINITE);
-        return 0;
-    }
 
     /* non native condition variables */
     pthread_mutex_lock(&win32_cond->mtx_broadcast);
@@ -371,10 +301,6 @@ static av_unused int pthread_cond_signal(pthread_cond_t *cond)
 {
     win32_cond_t *win32_cond = (win32_cond_t*)cond->Ptr;
     int have_waiter;
-    if (cond_signal) {
-        cond_signal(cond);
-        return 0;
-    }
 
     pthread_mutex_lock(&win32_cond->mtx_broadcast);
 
@@ -392,27 +318,9 @@ static av_unused int pthread_cond_signal(pthread_cond_t *cond)
     pthread_mutex_unlock(&win32_cond->mtx_broadcast);
     return 0;
 }
-#endif
 
 static av_unused void w32thread_init(void)
 {
-#if _WIN32_WINNT < 0x0600
-    HMODULE kernel_dll = GetModuleHandle(TEXT("kernel32.dll"));
-    /* if one is available, then they should all be available */
-    cond_init      = (void (WINAPI*)(pthread_cond_t *))
-        GetProcAddress(kernel_dll, "InitializeConditionVariable");
-    cond_broadcast = (void (WINAPI*)(pthread_cond_t *))
-        GetProcAddress(kernel_dll, "WakeAllConditionVariable");
-    cond_signal    = (void (WINAPI*)(pthread_cond_t *))
-        GetProcAddress(kernel_dll, "WakeConditionVariable");
-    cond_wait      = (BOOL (WINAPI*)(pthread_cond_t *, pthread_mutex_t *, DWORD))
-        GetProcAddress(kernel_dll, "SleepConditionVariableCS");
-    initonce_begin = (BOOL (WINAPI*)(pthread_once_t *, DWORD, BOOL *, void **))
-        GetProcAddress(kernel_dll, "InitOnceBeginInitialize");
-    initonce_complete = (BOOL (WINAPI*)(pthread_once_t *, DWORD, void *))
-        GetProcAddress(kernel_dll, "InitOnceComplete");
-#endif
-
 }
 
 #endif /* COMPAT_W32PTHREADS_H */

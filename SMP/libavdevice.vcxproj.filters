@@ -34,13 +34,7 @@
     <ClCompile Include="..\libavdevice\alldevices.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavdevice\avdevice.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavdevice\utils.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavdevice\file_open.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
     <ClCompile Include="..\libavdevice\dshow_crossbar.c">
@@ -64,12 +58,6 @@
     <ClCompile Include="..\libavdevice\dshow_common.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
-    <ClCompile Include="..\libavdevice\gdigrab.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libavdevice\lavfi.c">
-      <Filter>Source Files\libavdevice</Filter>
-    </ClCompile>
     <ClCompile Include="..\libavdevice\vfwcap.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
@@ -77,6 +65,9 @@
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
     <ClCompile Include="libavdevice\dce_defs.c">
+      <Filter>Source Files\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libavdevice\gdigrab.c">
       <Filter>Source Files\libavdevice</Filter>
     </ClCompile>
   </ItemGroup>
@@ -87,5 +78,16 @@
     <ClInclude Include="..\libavdevice\version.h">
       <Filter>Header Files\libavdevice</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\libavdevice\avdevice.c">
+      <Filter>Source Files\libavdevice</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavdevice\file_open.c">
+      <Filter>Source Files\libavdevice</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libavdevice\lavfi.c">
+      <Filter>Source Files\libavdevice</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>

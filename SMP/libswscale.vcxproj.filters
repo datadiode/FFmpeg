@@ -57,9 +57,6 @@
     <ClCompile Include="..\libswscale\gamma.c">
       <Filter>Source Files\libswscale</Filter>
     </ClCompile>
-    <ClCompile Include="..\libswscale\options.c">
-      <Filter>Source Files\libswscale</Filter>
-    </ClCompile>
     <ClCompile Include="..\libswscale\rgb2rgb.c">
       <Filter>Source Files\libswscale</Filter>
     </ClCompile>
@@ -70,9 +67,6 @@
       <Filter>Source Files\libswscale</Filter>
     </ClCompile>
     <ClCompile Include="..\libswscale\swscale_unscaled.c">
-      <Filter>Source Files\libswscale</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libswscale\utils.c">
       <Filter>Source Files\libswscale</Filter>
     </ClCompile>
     <ClCompile Include="..\libswscale\yuv2rgb.c">
@@ -113,5 +107,13 @@
     <ClInclude Include="..\libswscale\version.h">
       <Filter>Header Files\libswscale</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\libswscale\options.c">
+      <Filter>Source Files\libswscale</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libswscale\utils.c">
+      <Filter>Source Files\libswscale</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>

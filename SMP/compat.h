@@ -26,6 +26,11 @@
 #define SMP_COMPAT_H
 
 #ifdef _MSC_VER
+#   define _USE_32BIT_TIME_T
+#   ifdef _WIN32_WCE
+#       define MemoryBarrier _ReadWriteBarrier
+#       define strtoull _strtoui64
+#   endif
 #   ifndef __cplusplus
 #       define inline __inline
 #   endif

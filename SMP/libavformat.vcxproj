@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Compact2013_SDK_GSeries">
+      <Configuration>Debug</Configuration>
+      <Platform>Compact2013_SDK_GSeries</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -8,6 +12,10 @@
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Compact2013_SDK_GSeries">
+      <Configuration>Release</Configuration>
+      <Platform>Compact2013_SDK_GSeries</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
@@ -29,453 +37,453 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\libavformat\allformats.c" />
-    <ClCompile Include="..\libavformat\avio.c" />
-    <ClCompile Include="..\libavformat\aviobuf.c" />
+    <C99WRAP Include="..\libavformat\avio.c" />
+    <C99WRAP Include="..\libavformat\aviobuf.c" />
     <ClCompile Include="..\libavformat\cutils.c" />
     <ClCompile Include="..\libavformat\dump.c" />
     <ClCompile Include="..\libavformat\format.c" />
-    <ClCompile Include="..\libavformat\id3v1.c" />
+    <C99WRAP Include="..\libavformat\id3v1.c" />
     <ClCompile Include="..\libavformat\id3v2.c" />
     <ClCompile Include="..\libavformat\metadata.c" />
-    <ClCompile Include="..\libavformat\mux.c" />
-    <ClCompile Include="..\libavformat\options.c" />
+    <C99WRAP Include="..\libavformat\mux.c" />
+    <C99WRAP Include="..\libavformat\options.c" />
     <ClCompile Include="..\libavformat\os_support.c" />
     <ClCompile Include="..\libavformat\qtpalette.c" />
     <ClCompile Include="..\libavformat\protocols.c" />
     <ClCompile Include="..\libavformat\riff.c" />
     <ClCompile Include="..\libavformat\sdp.c" />
     <ClCompile Include="..\libavformat\url.c" />
-    <ClCompile Include="..\libavformat\utils.c" />
-    <ClCompile Include="..\libavformat\file_open.c" />
+    <C99WRAP Include="..\libavformat\utils.c" />
+    <C99WRAP Include="..\libavformat\file_open.c" />
     <ClCompile Include="..\libavformat\isom.c" />
-    <ClCompile Include="..\libavformat\network.c" />
-    <ClCompile Include="..\libavformat\riffdec.c" />
+    <C99WRAP Include="..\libavformat\network.c" />
+    <C99WRAP Include="..\libavformat\riffdec.c" />
     <ClCompile Include="..\libavformat\riffenc.c" />
-    <ClCompile Include="..\libavformat\rdt.c" />
-    <ClCompile Include="..\libavformat\rtp.c" />
-    <ClCompile Include="..\libavformat\rtpdec.c" />
-    <ClCompile Include="..\libavformat\rtpdec_ac3.c" />
-    <ClCompile Include="..\libavformat\rtpdec_amr.c" />
-    <ClCompile Include="..\libavformat\rtpdec_asf.c" />
-    <ClCompile Include="..\libavformat\rtpdec_dv.c" />
-    <ClCompile Include="..\libavformat\rtpdec_g726.c" />
-    <ClCompile Include="..\libavformat\rtpdec_h261.c" />
-    <ClCompile Include="..\libavformat\rtpdec_h263.c" />
-    <ClCompile Include="..\libavformat\rtpdec_h263_rfc2190.c" />
-    <ClCompile Include="..\libavformat\rtpdec_h264.c" />
-    <ClCompile Include="..\libavformat\rtpdec_hevc.c" />
-    <ClCompile Include="..\libavformat\rtpdec_ilbc.c" />
-    <ClCompile Include="..\libavformat\rtpdec_jpeg.c" />
-    <ClCompile Include="..\libavformat\rtpdec_latm.c" />
-    <ClCompile Include="..\libavformat\rtpdec_mpa_robust.c" />
-    <ClCompile Include="..\libavformat\rtpdec_mpeg12.c" />
-    <ClCompile Include="..\libavformat\rtpdec_mpeg4.c" />
-    <ClCompile Include="..\libavformat\rtpdec_mpegts.c" />
-    <ClCompile Include="..\libavformat\rtpdec_qcelp.c" />
-    <ClCompile Include="..\libavformat\rtpdec_qdm2.c" />
-    <ClCompile Include="..\libavformat\rtpdec_qt.c" />
-    <ClCompile Include="..\libavformat\rtpdec_rfc4175.c" />
-    <ClCompile Include="..\libavformat\rtpdec_svq3.c" />
-    <ClCompile Include="..\libavformat\rtpdec_vc2hq.c" />
-    <ClCompile Include="..\libavformat\rtpdec_vp8.c" />
-    <ClCompile Include="..\libavformat\rtpdec_vp9.c" />
-    <ClCompile Include="..\libavformat\rtpdec_xiph.c" />
+    <C99WRAP Include="..\libavformat\rdt.c" />
+    <C99WRAP Include="..\libavformat\rtp.c" />
+    <C99WRAP Include="..\libavformat\rtpdec.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_ac3.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_amr.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_asf.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_dv.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_g726.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_h261.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_h263.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_h263_rfc2190.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_h264.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_hevc.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_ilbc.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_jpeg.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_latm.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_mpa_robust.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_mpeg12.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_mpeg4.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_mpegts.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_qcelp.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_qdm2.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_qt.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_rfc4175.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_svq3.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_vc2hq.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_vp8.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_vp9.c" />
+    <C99WRAP Include="..\libavformat\rtpdec_xiph.c" />
     <ClCompile Include="..\libavformat\rtpenc_chain.c" />
     <ClCompile Include="..\libavformat\srtp.c" />
-    <ClCompile Include="..\libavformat\a64.c" />
-    <ClCompile Include="..\libavformat\rawenc.c" />
-    <ClCompile Include="..\libavformat\aadec.c" />
-    <ClCompile Include="..\libavformat\aacdec.c" />
+    <C99WRAP Include="..\libavformat\a64.c" />
+    <C99WRAP Include="..\libavformat\rawenc.c" />
+    <C99WRAP Include="..\libavformat\aadec.c" />
+    <C99WRAP Include="..\libavformat\aacdec.c" />
     <ClCompile Include="..\libavformat\apetag.c" />
     <ClCompile Include="..\libavformat\img2.c" />
-    <ClCompile Include="..\libavformat\rawdec.c" />
-    <ClCompile Include="..\libavformat\ac3dec.c" />
-    <ClCompile Include="..\libavformat\acm.c" />
-    <ClCompile Include="..\libavformat\act.c" />
-    <ClCompile Include="..\libavformat\bintext.c" />
+    <C99WRAP Include="..\libavformat\rawdec.c" />
+    <C99WRAP Include="..\libavformat\ac3dec.c" />
+    <C99WRAP Include="..\libavformat\acm.c" />
+    <C99WRAP Include="..\libavformat\act.c" />
+    <C99WRAP Include="..\libavformat\bintext.c" />
     <ClCompile Include="..\libavformat\sauce.c" />
-    <ClCompile Include="..\libavformat\adp.c" />
-    <ClCompile Include="..\libavformat\ads.c" />
-    <ClCompile Include="..\libavformat\adtsenc.c" />
+    <C99WRAP Include="..\libavformat\adp.c" />
+    <C99WRAP Include="..\libavformat\ads.c" />
+    <C99WRAP Include="..\libavformat\adtsenc.c" />
     <ClCompile Include="..\libavformat\id3v2enc.c" />
-    <ClCompile Include="..\libavformat\adxdec.c" />
-    <ClCompile Include="..\libavformat\aea.c" />
+    <C99WRAP Include="..\libavformat\adxdec.c" />
+    <C99WRAP Include="..\libavformat\aea.c" />
     <ClCompile Include="..\libavformat\pcm.c" />
-    <ClCompile Include="..\libavformat\afc.c" />
-    <ClCompile Include="..\libavformat\aiffdec.c" />
+    <C99WRAP Include="..\libavformat\afc.c" />
+    <C99WRAP Include="..\libavformat\aiffdec.c" />
     <ClCompile Include="..\libavformat\mov_chan.c" />
-    <ClCompile Include="..\libavformat\aiffenc.c" />
-    <ClCompile Include="..\libavformat\aixdec.c" />
-    <ClCompile Include="..\libavformat\amr.c" />
-    <ClCompile Include="..\libavformat\anm.c" />
-    <ClCompile Include="..\libavformat\apc.c" />
-    <ClCompile Include="..\libavformat\ape.c" />
-    <ClCompile Include="..\libavformat\apngdec.c" />
-    <ClCompile Include="..\libavformat\apngenc.c" />
-    <ClCompile Include="..\libavformat\aptxdec.c" />
-    <ClCompile Include="..\libavformat\aqtitledec.c" />
+    <C99WRAP Include="..\libavformat\aiffenc.c" />
+    <C99WRAP Include="..\libavformat\aixdec.c" />
+    <C99WRAP Include="..\libavformat\amr.c" />
+    <C99WRAP Include="..\libavformat\anm.c" />
+    <C99WRAP Include="..\libavformat\apc.c" />
+    <C99WRAP Include="..\libavformat\ape.c" />
+    <C99WRAP Include="..\libavformat\apngdec.c" />
+    <C99WRAP Include="..\libavformat\apngenc.c" />
+    <C99WRAP Include="..\libavformat\aptxdec.c" />
+    <C99WRAP Include="..\libavformat\aqtitledec.c" />
     <ClCompile Include="..\libavformat\subtitles.c" />
-    <ClCompile Include="..\libavformat\asfdec_f.c" />
+    <C99WRAP Include="..\libavformat\asfdec_f.c" />
     <ClCompile Include="..\libavformat\asf.c" />
     <ClCompile Include="..\libavformat\asfcrypt.c" />
     <ClCompile Include="..\libavformat\avlanguage.c" />
-    <ClCompile Include="..\libavformat\asfdec_o.c" />
-    <ClCompile Include="..\libavformat\asfenc.c" />
-    <ClCompile Include="..\libavformat\assdec.c" />
-    <ClCompile Include="..\libavformat\assenc.c" />
+    <C99WRAP Include="..\libavformat\asfdec_o.c" />
+    <C99WRAP Include="..\libavformat\asfenc.c" />
+    <C99WRAP Include="..\libavformat\assdec.c" />
+    <C99WRAP Include="..\libavformat\assenc.c" />
     <ClCompile Include="..\libavformat\ast.c" />
-    <ClCompile Include="..\libavformat\astdec.c" />
-    <ClCompile Include="..\libavformat\astenc.c" />
-    <ClCompile Include="..\libavformat\au.c" />
-    <ClCompile Include="..\libavformat\avidec.c" />
-    <ClCompile Include="..\libavformat\avienc.c" />
-    <ClCompile Include="..\libavformat\mpegtsenc.c" />
+    <C99WRAP Include="..\libavformat\astdec.c" />
+    <C99WRAP Include="..\libavformat\astenc.c" />
+    <C99WRAP Include="..\libavformat\au.c" />
+    <C99WRAP Include="..\libavformat\avidec.c" />
+    <C99WRAP Include="..\libavformat\avienc.c" />
+    <C99WRAP Include="..\libavformat\mpegtsenc.c" />
     <ClCompile Include="..\libavformat\rawutils.c" />
-    <ClCompile Include="..\libavformat\swfenc.c" />
+    <C99WRAP Include="..\libavformat\swfenc.c" />
     <ClCompile Include="..\libavformat\swf.c" />
-    <ClCompile Include="..\libavformat\avr.c" />
-    <ClCompile Include="..\libavformat\avs.c" />
+    <C99WRAP Include="..\libavformat\avr.c" />
+    <C99WRAP Include="..\libavformat\avs.c" />
     <ClCompile Include="..\libavformat\voc_packet.c" />
-    <ClCompile Include="..\libavformat\vocdec.c" />
+    <C99WRAP Include="..\libavformat\vocdec.c" />
     <ClCompile Include="..\libavformat\voc.c" />
-    <ClCompile Include="..\libavformat\bethsoftvid.c" />
-    <ClCompile Include="..\libavformat\bfi.c" />
-    <ClCompile Include="..\libavformat\bink.c" />
-    <ClCompile Include="..\libavformat\bit.c" />
-    <ClCompile Include="..\libavformat\bmv.c" />
-    <ClCompile Include="..\libavformat\boadec.c" />
-    <ClCompile Include="..\libavformat\brstm.c" />
-    <ClCompile Include="..\libavformat\c93.c" />
-    <ClCompile Include="..\libavformat\cafdec.c" />
+    <C99WRAP Include="..\libavformat\bethsoftvid.c" />
+    <C99WRAP Include="..\libavformat\bfi.c" />
+    <C99WRAP Include="..\libavformat\bink.c" />
+    <C99WRAP Include="..\libavformat\bit.c" />
+    <C99WRAP Include="..\libavformat\bmv.c" />
+    <C99WRAP Include="..\libavformat\boadec.c" />
+    <C99WRAP Include="..\libavformat\brstm.c" />
+    <C99WRAP Include="..\libavformat\c93.c" />
+    <C99WRAP Include="..\libavformat\cafdec.c" />
     <ClCompile Include="..\libavformat\caf.c" />
     <ClCompile Include="..\libavformat\mov_esds.c" />
-    <ClCompile Include="..\libavformat\cafenc.c" />
-    <ClCompile Include="..\libavformat\cavsvideodec.c" />
-    <ClCompile Include="..\libavformat\cdg.c" />
-    <ClCompile Include="..\libavformat\cdxl.c" />
-    <ClCompile Include="..\libavformat\cinedec.c" />
-    <ClCompile Include="..\libavformat\concatdec.c" />
-    <ClCompile Include="..\libavformat\crcenc.c" />
+    <C99WRAP Include="..\libavformat\cafenc.c" />
+    <C99WRAP Include="..\libavformat\cavsvideodec.c" />
+    <C99WRAP Include="..\libavformat\cdg.c" />
+    <C99WRAP Include="..\libavformat\cdxl.c" />
+    <C99WRAP Include="..\libavformat\cinedec.c" />
+    <C99WRAP Include="..\libavformat\concatdec.c" />
+    <C99WRAP Include="..\libavformat\crcenc.c" />
     <ClCompile Include="..\libavformat\dash.c" />
-    <ClCompile Include="..\libavformat\dashenc.c" />
-    <ClCompile Include="..\libavformat\dauddec.c" />
-    <ClCompile Include="..\libavformat\daudenc.c" />
-    <ClCompile Include="..\libavformat\dcstr.c" />
-    <ClCompile Include="..\libavformat\dfa.c" />
-    <ClCompile Include="..\libavformat\diracdec.c" />
-    <ClCompile Include="..\libavformat\dnxhddec.c" />
-    <ClCompile Include="..\libavformat\dsfdec.c" />
-    <ClCompile Include="..\libavformat\dsicin.c" />
-    <ClCompile Include="..\libavformat\dss.c" />
-    <ClCompile Include="..\libavformat\dtshddec.c" />
-    <ClCompile Include="..\libavformat\dtsdec.c" />
-    <ClCompile Include="..\libavformat\dv.c" />
-    <ClCompile Include="..\libavformat\dvenc.c" />
-    <ClCompile Include="..\libavformat\dvbsub.c" />
-    <ClCompile Include="..\libavformat\dvbtxt.c" />
-    <ClCompile Include="..\libavformat\dxa.c" />
-    <ClCompile Include="..\libavformat\eacdata.c" />
-    <ClCompile Include="..\libavformat\electronicarts.c" />
-    <ClCompile Include="..\libavformat\epafdec.c" />
-    <ClCompile Include="..\libavformat\ffmdec.c" />
-    <ClCompile Include="..\libavformat\ffmenc.c" />
-    <ClCompile Include="..\libavformat\ffmetadec.c" />
-    <ClCompile Include="..\libavformat\ffmetaenc.c" />
-    <ClCompile Include="..\libavformat\fifo.c" />
-    <ClCompile Include="..\libavformat\filmstripdec.c" />
-    <ClCompile Include="..\libavformat\filmstripenc.c" />
-    <ClCompile Include="..\libavformat\fitsdec.c" />
-    <ClCompile Include="..\libavformat\fitsenc.c" />
-    <ClCompile Include="..\libavformat\flacdec.c" />
+    <C99WRAP Include="..\libavformat\dashenc.c" />
+    <C99WRAP Include="..\libavformat\dauddec.c" />
+    <C99WRAP Include="..\libavformat\daudenc.c" />
+    <C99WRAP Include="..\libavformat\dcstr.c" />
+    <C99WRAP Include="..\libavformat\dfa.c" />
+    <C99WRAP Include="..\libavformat\diracdec.c" />
+    <C99WRAP Include="..\libavformat\dnxhddec.c" />
+    <C99WRAP Include="..\libavformat\dsfdec.c" />
+    <C99WRAP Include="..\libavformat\dsicin.c" />
+    <C99WRAP Include="..\libavformat\dss.c" />
+    <C99WRAP Include="..\libavformat\dtshddec.c" />
+    <C99WRAP Include="..\libavformat\dtsdec.c" />
+    <C99WRAP Include="..\libavformat\dv.c" />
+    <C99WRAP Include="..\libavformat\dvenc.c" />
+    <C99WRAP Include="..\libavformat\dvbsub.c" />
+    <C99WRAP Include="..\libavformat\dvbtxt.c" />
+    <C99WRAP Include="..\libavformat\dxa.c" />
+    <C99WRAP Include="..\libavformat\eacdata.c" />
+    <C99WRAP Include="..\libavformat\electronicarts.c" />
+    <C99WRAP Include="..\libavformat\epafdec.c" />
+    <C99WRAP Include="..\libavformat\ffmdec.c" />
+    <C99WRAP Include="..\libavformat\ffmenc.c" />
+    <C99WRAP Include="..\libavformat\ffmetadec.c" />
+    <C99WRAP Include="..\libavformat\ffmetaenc.c" />
+    <C99WRAP Include="..\libavformat\fifo.c" />
+    <C99WRAP Include="..\libavformat\filmstripdec.c" />
+    <C99WRAP Include="..\libavformat\filmstripenc.c" />
+    <C99WRAP Include="..\libavformat\fitsdec.c" />
+    <C99WRAP Include="..\libavformat\fitsenc.c" />
+    <C99WRAP Include="..\libavformat\flacdec.c" />
     <ClCompile Include="..\libavformat\flac_picture.c" />
-    <ClCompile Include="..\libavformat\oggparsevorbis.c" />
+    <C99WRAP Include="..\libavformat\oggparsevorbis.c" />
     <ClCompile Include="..\libavformat\replaygain.c" />
     <ClCompile Include="..\libavformat\vorbiscomment.c" />
-    <ClCompile Include="..\libavformat\flacenc.c" />
+    <C99WRAP Include="..\libavformat\flacenc.c" />
     <ClCompile Include="..\libavformat\flacenc_header.c" />
-    <ClCompile Include="..\libavformat\flic.c" />
-    <ClCompile Include="..\libavformat\flvdec.c" />
-    <ClCompile Include="..\libavformat\flvenc.c" />
+    <C99WRAP Include="..\libavformat\flic.c" />
+    <C99WRAP Include="..\libavformat\flvdec.c" />
+    <C99WRAP Include="..\libavformat\flvenc.c" />
     <ClCompile Include="..\libavformat\avc.c" />
-    <ClCompile Include="..\libavformat\4xm.c" />
-    <ClCompile Include="..\libavformat\framecrcenc.c" />
+    <C99WRAP Include="..\libavformat\4xm.c" />
+    <C99WRAP Include="..\libavformat\framecrcenc.c" />
     <ClCompile Include="..\libavformat\framehash.c" />
-    <ClCompile Include="..\libavformat\hashenc.c" />
-    <ClCompile Include="..\libavformat\frmdec.c" />
-    <ClCompile Include="..\libavformat\fsb.c" />
-    <ClCompile Include="..\libavformat\gif.c" />
-    <ClCompile Include="..\libavformat\gifdec.c" />
-    <ClCompile Include="..\libavformat\gsmdec.c" />
-    <ClCompile Include="..\libavformat\gxf.c" />
-    <ClCompile Include="..\libavformat\gxfenc.c" />
+    <C99WRAP Include="..\libavformat\hashenc.c" />
+    <C99WRAP Include="..\libavformat\frmdec.c" />
+    <C99WRAP Include="..\libavformat\fsb.c" />
+    <C99WRAP Include="..\libavformat\gif.c" />
+    <C99WRAP Include="..\libavformat\gifdec.c" />
+    <C99WRAP Include="..\libavformat\gsmdec.c" />
+    <C99WRAP Include="..\libavformat\gxf.c" />
+    <C99WRAP Include="..\libavformat\gxfenc.c" />
     <ClCompile Include="..\libavformat\audiointerleave.c" />
-    <ClCompile Include="..\libavformat\g722.c" />
-    <ClCompile Include="..\libavformat\g723_1.c" />
-    <ClCompile Include="..\libavformat\g726.c" />
-    <ClCompile Include="..\libavformat\g729dec.c" />
-    <ClCompile Include="..\libavformat\gdv.c" />
-    <ClCompile Include="..\libavformat\genh.c" />
-    <ClCompile Include="..\libavformat\h261dec.c" />
-    <ClCompile Include="..\libavformat\h263dec.c" />
-    <ClCompile Include="..\libavformat\h264dec.c" />
-    <ClCompile Include="..\libavformat\hdsenc.c" />
-    <ClCompile Include="..\libavformat\hevcdec.c" />
-    <ClCompile Include="..\libavformat\hls.c" />
-    <ClCompile Include="..\libavformat\hlsenc.c" />
-    <ClCompile Include="..\libavformat\hnm.c" />
-    <ClCompile Include="..\libavformat\icodec.c" />
-    <ClCompile Include="..\libavformat\icoenc.c" />
-    <ClCompile Include="..\libavformat\idcin.c" />
-    <ClCompile Include="..\libavformat\iff.c" />
-    <ClCompile Include="..\libavformat\ilbc.c" />
-    <ClCompile Include="..\libavformat\img2dec.c" />
-    <ClCompile Include="..\libavformat\img2enc.c" />
-    <ClCompile Include="..\libavformat\img2_alias_pix.c" />
-    <ClCompile Include="..\libavformat\img2_brender_pix.c" />
-    <ClCompile Include="..\libavformat\ingenientdec.c" />
-    <ClCompile Include="..\libavformat\ipmovie.c" />
-    <ClCompile Include="..\libavformat\ircamdec.c" />
+    <C99WRAP Include="..\libavformat\g722.c" />
+    <C99WRAP Include="..\libavformat\g723_1.c" />
+    <C99WRAP Include="..\libavformat\g726.c" />
+    <C99WRAP Include="..\libavformat\g729dec.c" />
+    <C99WRAP Include="..\libavformat\gdv.c" />
+    <C99WRAP Include="..\libavformat\genh.c" />
+    <C99WRAP Include="..\libavformat\h261dec.c" />
+    <C99WRAP Include="..\libavformat\h263dec.c" />
+    <C99WRAP Include="..\libavformat\h264dec.c" />
+    <C99WRAP Include="..\libavformat\hdsenc.c" />
+    <C99WRAP Include="..\libavformat\hevcdec.c" />
+    <C99WRAP Include="..\libavformat\hls.c" />
+    <C99WRAP Include="..\libavformat\hlsenc.c" />
+    <C99WRAP Include="..\libavformat\hnm.c" />
+    <C99WRAP Include="..\libavformat\icodec.c" />
+    <C99WRAP Include="..\libavformat\icoenc.c" />
+    <C99WRAP Include="..\libavformat\idcin.c" />
+    <C99WRAP Include="..\libavformat\iff.c" />
+    <C99WRAP Include="..\libavformat\ilbc.c" />
+    <C99WRAP Include="..\libavformat\img2dec.c" />
+    <C99WRAP Include="..\libavformat\img2enc.c" />
+    <C99WRAP Include="..\libavformat\img2_alias_pix.c" />
+    <C99WRAP Include="..\libavformat\img2_brender_pix.c" />
+    <C99WRAP Include="..\libavformat\ingenientdec.c" />
+    <C99WRAP Include="..\libavformat\ipmovie.c" />
+    <C99WRAP Include="..\libavformat\ircamdec.c" />
     <ClCompile Include="..\libavformat\ircam.c" />
-    <ClCompile Include="..\libavformat\ircamenc.c" />
-    <ClCompile Include="..\libavformat\iss.c" />
-    <ClCompile Include="..\libavformat\iv8.c" />
-    <ClCompile Include="..\libavformat\ivfdec.c" />
-    <ClCompile Include="..\libavformat\ivfenc.c" />
-    <ClCompile Include="..\libavformat\rmdec.c" />
+    <C99WRAP Include="..\libavformat\ircamenc.c" />
+    <C99WRAP Include="..\libavformat\iss.c" />
+    <C99WRAP Include="..\libavformat\iv8.c" />
+    <C99WRAP Include="..\libavformat\ivfdec.c" />
+    <C99WRAP Include="..\libavformat\ivfenc.c" />
+    <C99WRAP Include="..\libavformat\rmdec.c" />
     <ClCompile Include="..\libavformat\rm.c" />
     <ClCompile Include="..\libavformat\rmsipr.c" />
-    <ClCompile Include="..\libavformat\jacosubdec.c" />
-    <ClCompile Include="..\libavformat\jacosubenc.c" />
-    <ClCompile Include="..\libavformat\jvdec.c" />
-    <ClCompile Include="..\libavformat\latmenc.c" />
-    <ClCompile Include="..\libavformat\lmlm4.c" />
-    <ClCompile Include="..\libavformat\loasdec.c" />
-    <ClCompile Include="..\libavformat\lrcdec.c" />
+    <C99WRAP Include="..\libavformat\jacosubdec.c" />
+    <C99WRAP Include="..\libavformat\jacosubenc.c" />
+    <C99WRAP Include="..\libavformat\jvdec.c" />
+    <C99WRAP Include="..\libavformat\latmenc.c" />
+    <C99WRAP Include="..\libavformat\lmlm4.c" />
+    <C99WRAP Include="..\libavformat\loasdec.c" />
+    <C99WRAP Include="..\libavformat\lrcdec.c" />
     <ClCompile Include="..\libavformat\lrc.c" />
-    <ClCompile Include="..\libavformat\lrcenc.c" />
-    <ClCompile Include="..\libavformat\lvfdec.c" />
-    <ClCompile Include="..\libavformat\lxfdec.c" />
-    <ClCompile Include="..\libavformat\m4vdec.c" />
-    <ClCompile Include="..\libavformat\matroskadec.c" />
+    <C99WRAP Include="..\libavformat\lrcenc.c" />
+    <C99WRAP Include="..\libavformat\lvfdec.c" />
+    <C99WRAP Include="..\libavformat\lxfdec.c" />
+    <C99WRAP Include="..\libavformat\m4vdec.c" />
+    <C99WRAP Include="..\libavformat\matroskadec.c" />
     <ClCompile Include="..\libavformat\matroska.c" />
-    <ClCompile Include="..\libavformat\matroskaenc.c" />
+    <C99WRAP Include="..\libavformat\matroskaenc.c" />
     <ClCompile Include="..\libavformat\hevc.c" />
     <ClCompile Include="..\libavformat\wv.c" />
-    <ClCompile Include="..\libavformat\webmdashenc.c" />
-    <ClCompile Include="..\libavformat\webm_chunk.c" />
-    <ClCompile Include="..\libavformat\mgsts.c" />
-    <ClCompile Include="..\libavformat\microdvddec.c" />
-    <ClCompile Include="..\libavformat\microdvdenc.c" />
-    <ClCompile Include="..\libavformat\mj2kdec.c" />
-    <ClCompile Include="..\libavformat\mlpdec.c" />
-    <ClCompile Include="..\libavformat\mlvdec.c" />
-    <ClCompile Include="..\libavformat\mm.c" />
-    <ClCompile Include="..\libavformat\mmf.c" />
-    <ClCompile Include="..\libavformat\mov.c" />
-    <ClCompile Include="..\libavformat\movenc.c" />
+    <C99WRAP Include="..\libavformat\webmdashenc.c" />
+    <C99WRAP Include="..\libavformat\webm_chunk.c" />
+    <C99WRAP Include="..\libavformat\mgsts.c" />
+    <C99WRAP Include="..\libavformat\microdvddec.c" />
+    <C99WRAP Include="..\libavformat\microdvdenc.c" />
+    <C99WRAP Include="..\libavformat\mj2kdec.c" />
+    <C99WRAP Include="..\libavformat\mlpdec.c" />
+    <C99WRAP Include="..\libavformat\mlvdec.c" />
+    <C99WRAP Include="..\libavformat\mm.c" />
+    <C99WRAP Include="..\libavformat\mmf.c" />
+    <C99WRAP Include="..\libavformat\mov.c" />
+    <C99WRAP Include="..\libavformat\movenc.c" />
     <ClCompile Include="..\libavformat\vpcc.c" />
     <ClCompile Include="..\libavformat\movenchint.c" />
     <ClCompile Include="..\libavformat\movenccenc.c" />
-    <ClCompile Include="..\libavformat\mp3dec.c" />
-    <ClCompile Include="..\libavformat\mp3enc.c" />
-    <ClCompile Include="..\libavformat\mpc.c" />
-    <ClCompile Include="..\libavformat\mpc8.c" />
-    <ClCompile Include="..\libavformat\mpegenc.c" />
-    <ClCompile Include="..\libavformat\mpeg.c" />
-    <ClCompile Include="..\libavformat\mpegts.c" />
-    <ClCompile Include="..\libavformat\mpegvideodec.c" />
-    <ClCompile Include="..\libavformat\mpjpegdec.c" />
-    <ClCompile Include="..\libavformat\mpjpeg.c" />
-    <ClCompile Include="..\libavformat\mpl2dec.c" />
-    <ClCompile Include="..\libavformat\msf.c" />
-    <ClCompile Include="..\libavformat\mpsubdec.c" />
-    <ClCompile Include="..\libavformat\msnwc_tcp.c" />
-    <ClCompile Include="..\libavformat\mtaf.c" />
-    <ClCompile Include="..\libavformat\mtv.c" />
-    <ClCompile Include="..\libavformat\musx.c" />
-    <ClCompile Include="..\libavformat\mvdec.c" />
-    <ClCompile Include="..\libavformat\mvi.c" />
-    <ClCompile Include="..\libavformat\mxfdec.c" />
-    <ClCompile Include="..\libavformat\mxf.c" />
-    <ClCompile Include="..\libavformat\mxfenc.c" />
-    <ClCompile Include="..\libavformat\mxg.c" />
-    <ClCompile Include="..\libavformat\ncdec.c" />
-    <ClCompile Include="..\libavformat\nistspheredec.c" />
-    <ClCompile Include="..\libavformat\nsvdec.c" />
-    <ClCompile Include="..\libavformat\nullenc.c" />
-    <ClCompile Include="..\libavformat\nutdec.c" />
+    <C99WRAP Include="..\libavformat\mp3dec.c" />
+    <C99WRAP Include="..\libavformat\mp3enc.c" />
+    <C99WRAP Include="..\libavformat\mpc.c" />
+    <C99WRAP Include="..\libavformat\mpc8.c" />
+    <C99WRAP Include="..\libavformat\mpegenc.c" />
+    <C99WRAP Include="..\libavformat\mpeg.c" />
+    <C99WRAP Include="..\libavformat\mpegts.c" />
+    <C99WRAP Include="..\libavformat\mpegvideodec.c" />
+    <C99WRAP Include="..\libavformat\mpjpegdec.c" />
+    <C99WRAP Include="..\libavformat\mpjpeg.c" />
+    <C99WRAP Include="..\libavformat\mpl2dec.c" />
+    <C99WRAP Include="..\libavformat\msf.c" />
+    <C99WRAP Include="..\libavformat\mpsubdec.c" />
+    <C99WRAP Include="..\libavformat\msnwc_tcp.c" />
+    <C99WRAP Include="..\libavformat\mtaf.c" />
+    <C99WRAP Include="..\libavformat\mtv.c" />
+    <C99WRAP Include="..\libavformat\musx.c" />
+    <C99WRAP Include="..\libavformat\mvdec.c" />
+    <C99WRAP Include="..\libavformat\mvi.c" />
+    <C99WRAP Include="..\libavformat\mxfdec.c" />
+    <C99WRAP Include="..\libavformat\mxf.c" />
+    <C99WRAP Include="..\libavformat\mxfenc.c" />
+    <C99WRAP Include="..\libavformat\mxg.c" />
+    <C99WRAP Include="..\libavformat\ncdec.c" />
+    <C99WRAP Include="..\libavformat\nistspheredec.c" />
+    <C99WRAP Include="..\libavformat\nsvdec.c" />
+    <C99WRAP Include="..\libavformat\nullenc.c" />
+    <C99WRAP Include="..\libavformat\nutdec.c" />
     <ClCompile Include="..\libavformat\nut.c" />
-    <ClCompile Include="..\libavformat\nutenc.c" />
-    <ClCompile Include="..\libavformat\nuv.c" />
-    <ClCompile Include="..\libavformat\oggdec.c" />
-    <ClCompile Include="..\libavformat\oggparsecelt.c" />
-    <ClCompile Include="..\libavformat\oggparsedaala.c" />
-    <ClCompile Include="..\libavformat\oggparsedirac.c" />
-    <ClCompile Include="..\libavformat\oggparseflac.c" />
-    <ClCompile Include="..\libavformat\oggparseogm.c" />
-    <ClCompile Include="..\libavformat\oggparseopus.c" />
-    <ClCompile Include="..\libavformat\oggparseskeleton.c" />
-    <ClCompile Include="..\libavformat\oggparsespeex.c" />
-    <ClCompile Include="..\libavformat\oggparsetheora.c" />
-    <ClCompile Include="..\libavformat\oggparsevp8.c" />
-    <ClCompile Include="..\libavformat\oggenc.c" />
-    <ClCompile Include="..\libavformat\omadec.c" />
+    <C99WRAP Include="..\libavformat\nutenc.c" />
+    <C99WRAP Include="..\libavformat\nuv.c" />
+    <C99WRAP Include="..\libavformat\oggdec.c" />
+    <C99WRAP Include="..\libavformat\oggparsecelt.c" />
+    <C99WRAP Include="..\libavformat\oggparsedaala.c" />
+    <C99WRAP Include="..\libavformat\oggparsedirac.c" />
+    <C99WRAP Include="..\libavformat\oggparseflac.c" />
+    <C99WRAP Include="..\libavformat\oggparseogm.c" />
+    <C99WRAP Include="..\libavformat\oggparseopus.c" />
+    <C99WRAP Include="..\libavformat\oggparseskeleton.c" />
+    <C99WRAP Include="..\libavformat\oggparsespeex.c" />
+    <C99WRAP Include="..\libavformat\oggparsetheora.c" />
+    <C99WRAP Include="..\libavformat\oggparsevp8.c" />
+    <C99WRAP Include="..\libavformat\oggenc.c" />
+    <C99WRAP Include="..\libavformat\omadec.c" />
     <ClCompile Include="..\libavformat\oma.c" />
-    <ClCompile Include="..\libavformat\omaenc.c" />
-    <ClCompile Include="..\libavformat\paf.c" />
-    <ClCompile Include="..\libavformat\pcmdec.c" />
-    <ClCompile Include="..\libavformat\pcmenc.c" />
-    <ClCompile Include="..\libavformat\pjsdec.c" />
-    <ClCompile Include="..\libavformat\pmpdec.c" />
-    <ClCompile Include="..\libavformat\pva.c" />
-    <ClCompile Include="..\libavformat\pvfdec.c" />
-    <ClCompile Include="..\libavformat\qcp.c" />
-    <ClCompile Include="..\libavformat\r3d.c" />
-    <ClCompile Include="..\libavformat\rawvideodec.c" />
-    <ClCompile Include="..\libavformat\realtextdec.c" />
-    <ClCompile Include="..\libavformat\redspark.c" />
-    <ClCompile Include="..\libavformat\rl2.c" />
-    <ClCompile Include="..\libavformat\rmenc.c" />
-    <ClCompile Include="..\libavformat\idroqdec.c" />
-    <ClCompile Include="..\libavformat\idroqenc.c" />
-    <ClCompile Include="..\libavformat\rsd.c" />
-    <ClCompile Include="..\libavformat\rpl.c" />
-    <ClCompile Include="..\libavformat\rsodec.c" />
+    <C99WRAP Include="..\libavformat\omaenc.c" />
+    <C99WRAP Include="..\libavformat\paf.c" />
+    <C99WRAP Include="..\libavformat\pcmdec.c" />
+    <C99WRAP Include="..\libavformat\pcmenc.c" />
+    <C99WRAP Include="..\libavformat\pjsdec.c" />
+    <C99WRAP Include="..\libavformat\pmpdec.c" />
+    <C99WRAP Include="..\libavformat\pva.c" />
+    <C99WRAP Include="..\libavformat\pvfdec.c" />
+    <C99WRAP Include="..\libavformat\qcp.c" />
+    <C99WRAP Include="..\libavformat\r3d.c" />
+    <C99WRAP Include="..\libavformat\rawvideodec.c" />
+    <C99WRAP Include="..\libavformat\realtextdec.c" />
+    <C99WRAP Include="..\libavformat\redspark.c" />
+    <C99WRAP Include="..\libavformat\rl2.c" />
+    <C99WRAP Include="..\libavformat\rmenc.c" />
+    <C99WRAP Include="..\libavformat\idroqdec.c" />
+    <C99WRAP Include="..\libavformat\idroqenc.c" />
+    <C99WRAP Include="..\libavformat\rsd.c" />
+    <C99WRAP Include="..\libavformat\rpl.c" />
+    <C99WRAP Include="..\libavformat\rsodec.c" />
     <ClCompile Include="..\libavformat\rso.c" />
-    <ClCompile Include="..\libavformat\rsoenc.c" />
-    <ClCompile Include="..\libavformat\rtpenc_mpegts.c" />
-    <ClCompile Include="..\libavformat\rtpenc_aac.c" />
+    <C99WRAP Include="..\libavformat\rsoenc.c" />
+    <C99WRAP Include="..\libavformat\rtpenc_mpegts.c" />
+    <C99WRAP Include="..\libavformat\rtpenc_aac.c" />
     <ClCompile Include="..\libavformat\rtpenc_latm.c" />
-    <ClCompile Include="..\libavformat\rtpenc_amr.c" />
+    <C99WRAP Include="..\libavformat\rtpenc_amr.c" />
     <ClCompile Include="..\libavformat\rtpenc_h261.c" />
     <ClCompile Include="..\libavformat\rtpenc_h263.c" />
     <ClCompile Include="..\libavformat\rtpenc_h263_rfc2190.c" />
     <ClCompile Include="..\libavformat\rtpenc_h264_hevc.c" />
     <ClCompile Include="..\libavformat\rtpenc_jpeg.c" />
     <ClCompile Include="..\libavformat\rtpenc_mpv.c" />
-    <ClCompile Include="..\libavformat\rtpenc.c" />
+    <C99WRAP Include="..\libavformat\rtpenc.c" />
     <ClCompile Include="..\libavformat\rtpenc_vc2hq.c" />
     <ClCompile Include="..\libavformat\rtpenc_vp8.c" />
     <ClCompile Include="..\libavformat\rtpenc_vp9.c" />
-    <ClCompile Include="..\libavformat\rtpenc_xiph.c" />
-    <ClCompile Include="..\libavformat\rtsp.c" />
-    <ClCompile Include="..\libavformat\rtspdec.c" />
+    <C99WRAP Include="..\libavformat\rtpenc_xiph.c" />
+    <C99WRAP Include="..\libavformat\rtsp.c" />
+    <C99WRAP Include="..\libavformat\rtspdec.c" />
     <ClCompile Include="..\libavformat\httpauth.c" />
     <ClCompile Include="..\libavformat\urldecode.c" />
-    <ClCompile Include="..\libavformat\rtspenc.c" />
-    <ClCompile Include="..\libavformat\s337m.c" />
+    <C99WRAP Include="..\libavformat\rtspenc.c" />
+    <C99WRAP Include="..\libavformat\s337m.c" />
     <ClCompile Include="..\libavformat\spdif.c" />
-    <ClCompile Include="..\libavformat\samidec.c" />
-    <ClCompile Include="..\libavformat\sapdec.c" />
-    <ClCompile Include="..\libavformat\sapenc.c" />
-    <ClCompile Include="..\libavformat\sbgdec.c" />
-    <ClCompile Include="..\libavformat\sccdec.c" />
-    <ClCompile Include="..\libavformat\sccenc.c" />
-    <ClCompile Include="..\libavformat\sdr2.c" />
-    <ClCompile Include="..\libavformat\sdsdec.c" />
-    <ClCompile Include="..\libavformat\sdxdec.c" />
-    <ClCompile Include="..\libavformat\segafilm.c" />
-    <ClCompile Include="..\libavformat\segment.c" />
-    <ClCompile Include="..\libavformat\shortendec.c" />
-    <ClCompile Include="..\libavformat\siff.c" />
-    <ClCompile Include="..\libavformat\smacker.c" />
-    <ClCompile Include="..\libavformat\smjpegdec.c" />
+    <C99WRAP Include="..\libavformat\samidec.c" />
+    <C99WRAP Include="..\libavformat\sapdec.c" />
+    <C99WRAP Include="..\libavformat\sapenc.c" />
+    <C99WRAP Include="..\libavformat\sbgdec.c" />
+    <C99WRAP Include="..\libavformat\sccdec.c" />
+    <C99WRAP Include="..\libavformat\sccenc.c" />
+    <C99WRAP Include="..\libavformat\sdr2.c" />
+    <C99WRAP Include="..\libavformat\sdsdec.c" />
+    <C99WRAP Include="..\libavformat\sdxdec.c" />
+    <C99WRAP Include="..\libavformat\segafilm.c" />
+    <C99WRAP Include="..\libavformat\segment.c" />
+    <C99WRAP Include="..\libavformat\shortendec.c" />
+    <C99WRAP Include="..\libavformat\siff.c" />
+    <C99WRAP Include="..\libavformat\smacker.c" />
+    <C99WRAP Include="..\libavformat\smjpegdec.c" />
     <ClCompile Include="..\libavformat\smjpeg.c" />
-    <ClCompile Include="..\libavformat\smjpegenc.c" />
-    <ClCompile Include="..\libavformat\smoothstreamingenc.c" />
-    <ClCompile Include="..\libavformat\smush.c" />
-    <ClCompile Include="..\libavformat\sol.c" />
-    <ClCompile Include="..\libavformat\soxdec.c" />
-    <ClCompile Include="..\libavformat\soxenc.c" />
-    <ClCompile Include="..\libavformat\spdifdec.c" />
-    <ClCompile Include="..\libavformat\spdifenc.c" />
-    <ClCompile Include="..\libavformat\srtdec.c" />
-    <ClCompile Include="..\libavformat\srtenc.c" />
-    <ClCompile Include="..\libavformat\stldec.c" />
-    <ClCompile Include="..\libavformat\psxstr.c" />
-    <ClCompile Include="..\libavformat\subviewer1dec.c" />
-    <ClCompile Include="..\libavformat\subviewerdec.c" />
-    <ClCompile Include="..\libavformat\supdec.c" />
-    <ClCompile Include="..\libavformat\supenc.c" />
-    <ClCompile Include="..\libavformat\svag.c" />
-    <ClCompile Include="..\libavformat\swfdec.c" />
-    <ClCompile Include="..\libavformat\takdec.c" />
-    <ClCompile Include="..\libavformat\tedcaptionsdec.c" />
-    <ClCompile Include="..\libavformat\tee.c" />
+    <C99WRAP Include="..\libavformat\smjpegenc.c" />
+    <C99WRAP Include="..\libavformat\smoothstreamingenc.c" />
+    <C99WRAP Include="..\libavformat\smush.c" />
+    <C99WRAP Include="..\libavformat\sol.c" />
+    <C99WRAP Include="..\libavformat\soxdec.c" />
+    <C99WRAP Include="..\libavformat\soxenc.c" />
+    <C99WRAP Include="..\libavformat\spdifdec.c" />
+    <C99WRAP Include="..\libavformat\spdifenc.c" />
+    <C99WRAP Include="..\libavformat\srtdec.c" />
+    <C99WRAP Include="..\libavformat\srtenc.c" />
+    <C99WRAP Include="..\libavformat\stldec.c" />
+    <C99WRAP Include="..\libavformat\psxstr.c" />
+    <C99WRAP Include="..\libavformat\subviewer1dec.c" />
+    <C99WRAP Include="..\libavformat\subviewerdec.c" />
+    <C99WRAP Include="..\libavformat\supdec.c" />
+    <C99WRAP Include="..\libavformat\supenc.c" />
+    <C99WRAP Include="..\libavformat\svag.c" />
+    <C99WRAP Include="..\libavformat\swfdec.c" />
+    <C99WRAP Include="..\libavformat\takdec.c" />
+    <C99WRAP Include="..\libavformat\tedcaptionsdec.c" />
+    <C99WRAP Include="..\libavformat\tee.c" />
     <ClCompile Include="..\libavformat\tee_common.c" />
-    <ClCompile Include="..\libavformat\thp.c" />
-    <ClCompile Include="..\libavformat\3dostr.c" />
-    <ClCompile Include="..\libavformat\tiertexseq.c" />
-    <ClCompile Include="..\libavformat\mkvtimestamp_v2.c" />
-    <ClCompile Include="..\libavformat\tmv.c" />
-    <ClCompile Include="..\libavformat\tta.c" />
-    <ClCompile Include="..\libavformat\ttaenc.c" />
-    <ClCompile Include="..\libavformat\tty.c" />
-    <ClCompile Include="..\libavformat\ty.c" />
-    <ClCompile Include="..\libavformat\txd.c" />
-    <ClCompile Include="..\libavformat\uncodedframecrcenc.c" />
-    <ClCompile Include="..\libavformat\v210.c" />
-    <ClCompile Include="..\libavformat\vag.c" />
-    <ClCompile Include="..\libavformat\vc1dec.c" />
-    <ClCompile Include="..\libavformat\vc1test.c" />
-    <ClCompile Include="..\libavformat\vc1testenc.c" />
-    <ClCompile Include="..\libavformat\vivo.c" />
-    <ClCompile Include="..\libavformat\sierravmd.c" />
-    <ClCompile Include="..\libavformat\vocenc.c" />
-    <ClCompile Include="..\libavformat\vpk.c" />
-    <ClCompile Include="..\libavformat\vplayerdec.c" />
-    <ClCompile Include="..\libavformat\vqf.c" />
-    <ClCompile Include="..\libavformat\wavdec.c" />
+    <C99WRAP Include="..\libavformat\thp.c" />
+    <C99WRAP Include="..\libavformat\3dostr.c" />
+    <C99WRAP Include="..\libavformat\tiertexseq.c" />
+    <C99WRAP Include="..\libavformat\mkvtimestamp_v2.c" />
+    <C99WRAP Include="..\libavformat\tmv.c" />
+    <C99WRAP Include="..\libavformat\tta.c" />
+    <C99WRAP Include="..\libavformat\ttaenc.c" />
+    <C99WRAP Include="..\libavformat\tty.c" />
+    <C99WRAP Include="..\libavformat\ty.c" />
+    <C99WRAP Include="..\libavformat\txd.c" />
+    <C99WRAP Include="..\libavformat\uncodedframecrcenc.c" />
+    <C99WRAP Include="..\libavformat\v210.c" />
+    <C99WRAP Include="..\libavformat\vag.c" />
+    <C99WRAP Include="..\libavformat\vc1dec.c" />
+    <C99WRAP Include="..\libavformat\vc1test.c" />
+    <C99WRAP Include="..\libavformat\vc1testenc.c" />
+    <C99WRAP Include="..\libavformat\vivo.c" />
+    <C99WRAP Include="..\libavformat\sierravmd.c" />
+    <C99WRAP Include="..\libavformat\vocenc.c" />
+    <C99WRAP Include="..\libavformat\vpk.c" />
+    <C99WRAP Include="..\libavformat\vplayerdec.c" />
+    <C99WRAP Include="..\libavformat\vqf.c" />
+    <C99WRAP Include="..\libavformat\wavdec.c" />
     <ClCompile Include="..\libavformat\w64.c" />
-    <ClCompile Include="..\libavformat\wavenc.c" />
-    <ClCompile Include="..\libavformat\wc3movie.c" />
-    <ClCompile Include="..\libavformat\webpenc.c" />
-    <ClCompile Include="..\libavformat\webvttdec.c" />
-    <ClCompile Include="..\libavformat\webvttenc.c" />
-    <ClCompile Include="..\libavformat\westwood_aud.c" />
-    <ClCompile Include="..\libavformat\wsddec.c" />
-    <ClCompile Include="..\libavformat\westwood_vqa.c" />
-    <ClCompile Include="..\libavformat\wtvdec.c" />
+    <C99WRAP Include="..\libavformat\wavenc.c" />
+    <C99WRAP Include="..\libavformat\wc3movie.c" />
+    <C99WRAP Include="..\libavformat\webpenc.c" />
+    <C99WRAP Include="..\libavformat\webvttdec.c" />
+    <C99WRAP Include="..\libavformat\webvttenc.c" />
+    <C99WRAP Include="..\libavformat\westwood_aud.c" />
+    <C99WRAP Include="..\libavformat\wsddec.c" />
+    <C99WRAP Include="..\libavformat\westwood_vqa.c" />
+    <C99WRAP Include="..\libavformat\wtvdec.c" />
     <ClCompile Include="..\libavformat\wtv_common.c" />
-    <ClCompile Include="..\libavformat\wtvenc.c" />
-    <ClCompile Include="..\libavformat\wvdec.c" />
-    <ClCompile Include="..\libavformat\wvedec.c" />
-    <ClCompile Include="..\libavformat\wvenc.c" />
-    <ClCompile Include="..\libavformat\xa.c" />
-    <ClCompile Include="..\libavformat\xmv.c" />
-    <ClCompile Include="..\libavformat\xvag.c" />
-    <ClCompile Include="..\libavformat\xwma.c" />
-    <ClCompile Include="..\libavformat\yop.c" />
-    <ClCompile Include="..\libavformat\yuv4mpegdec.c" />
-    <ClCompile Include="..\libavformat\yuv4mpegenc.c" />
-    <ClCompile Include="..\libavformat\async.c" />
-    <ClCompile Include="..\libavformat\cache.c" />
-    <ClCompile Include="..\libavformat\concat.c" />
-    <ClCompile Include="..\libavformat\crypto.c" />
-    <ClCompile Include="..\libavformat\data_uri.c" />
-    <ClCompile Include="..\libavformat\rtmphttp.c" />
-    <ClCompile Include="..\libavformat\file.c" />
-    <ClCompile Include="..\libavformat\ftp.c" />
-    <ClCompile Include="..\libavformat\gopher.c" />
-    <ClCompile Include="..\libavformat\hlsproto.c" />
-    <ClCompile Include="..\libavformat\http.c" />
-    <ClCompile Include="..\libavformat\icecast.c" />
-    <ClCompile Include="..\libavformat\md5proto.c" />
-    <ClCompile Include="..\libavformat\mmsh.c" />
+    <C99WRAP Include="..\libavformat\wtvenc.c" />
+    <C99WRAP Include="..\libavformat\wvdec.c" />
+    <C99WRAP Include="..\libavformat\wvedec.c" />
+    <C99WRAP Include="..\libavformat\wvenc.c" />
+    <C99WRAP Include="..\libavformat\xa.c" />
+    <C99WRAP Include="..\libavformat\xmv.c" />
+    <C99WRAP Include="..\libavformat\xvag.c" />
+    <C99WRAP Include="..\libavformat\xwma.c" />
+    <C99WRAP Include="..\libavformat\yop.c" />
+    <C99WRAP Include="..\libavformat\yuv4mpegdec.c" />
+    <C99WRAP Include="..\libavformat\yuv4mpegenc.c" />
+    <C99WRAP Include="..\libavformat\async.c" />
+    <C99WRAP Include="..\libavformat\cache.c" />
+    <C99WRAP Include="..\libavformat\concat.c" />
+    <C99WRAP Include="..\libavformat\crypto.c" />
+    <C99WRAP Include="..\libavformat\data_uri.c" />
+    <C99WRAP Include="..\libavformat\rtmphttp.c" />
+    <C99WRAP Include="..\libavformat\file.c" />
+    <C99WRAP Include="..\libavformat\ftp.c" />
+    <C99WRAP Include="..\libavformat\gopher.c" />
+    <C99WRAP Include="..\libavformat\hlsproto.c" />
+    <C99WRAP Include="..\libavformat\http.c" />
+    <C99WRAP Include="..\libavformat\icecast.c" />
+    <C99WRAP Include="..\libavformat\md5proto.c" />
+    <C99WRAP Include="..\libavformat\mmsh.c" />
     <ClCompile Include="..\libavformat\mms.c" />
-    <ClCompile Include="..\libavformat\mmst.c" />
-    <ClCompile Include="..\libavformat\prompeg.c" />
-    <ClCompile Include="..\libavformat\rtmpproto.c" />
+    <C99WRAP Include="..\libavformat\mmst.c" />
+    <C99WRAP Include="..\libavformat\prompeg.c" />
+    <C99WRAP Include="..\libavformat\rtmpproto.c" />
     <ClCompile Include="..\libavformat\rtmpdigest.c" />
     <ClCompile Include="..\libavformat\rtmppkt.c" />
-    <ClCompile Include="..\libavformat\rtpproto.c" />
-    <ClCompile Include="..\libavformat\srtpproto.c" />
-    <ClCompile Include="..\libavformat\subfile.c" />
-    <ClCompile Include="..\libavformat\teeproto.c" />
-    <ClCompile Include="..\libavformat\tcp.c" />
+    <C99WRAP Include="..\libavformat\rtpproto.c" />
+    <C99WRAP Include="..\libavformat\srtpproto.c" />
+    <C99WRAP Include="..\libavformat\subfile.c" />
+    <C99WRAP Include="..\libavformat\teeproto.c" />
+    <C99WRAP Include="..\libavformat\tcp.c" />
     <ClCompile Include="..\libavformat\tls.c" />
-    <ClCompile Include="..\libavformat\tls_schannel.c" />
-    <ClCompile Include="..\libavformat\udp.c" />
+    <C99WRAP Include="..\libavformat\tls_schannel.c" />
+    <C99WRAP Include="..\libavformat\udp.c" />
     <ClCompile Include="libavformat\golomb_tab_wrap.c" />
     <ClCompile Include="libavformat\log2_tab_wrap.c" />
     <ClCompile Include="libavformat\dce_defs.c" />
@@ -488,36 +496,62 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{30A96E9B-8061-4F19-BD71-FDE7EA8F7929}</ProjectGuid>
     <RootNamespace>libavformat</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Compact2013_SDK_GSeries'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>CE800</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Compact2013_SDK_GSeries'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>CE800</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\c99wrap.props" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Compact2013_SDK_GSeries'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Compact2013_SDK_GSeries'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
@@ -527,22 +561,38 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>libavformatd</TargetName>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Compact2013_SDK_GSeries'">
+    <TargetName>libavformatd</TargetName>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>libavformatd</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>libavformat</TargetName>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Compact2013_SDK_GSeries'">
+    <TargetName>libavformat</TargetName>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>libavformat</TargetName>
-    <OutDir>$(ProjectDir)..\..\..\msvc\</OutDir>
+    <OutDir>$(SolutionDir)out\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -556,19 +606,79 @@
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <OmitFramePointers>false</OmitFramePointers>
       <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <FloatingPointModel>Precise</FloatingPointModel>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>ws2_32.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\libavformat
+copy ..\libavformat\avformat.h "$(OutDir)"\include\libavformat
+copy ..\libavformat\avio.h "$(OutDir)"\include\libavformat
+copy ..\libavformat\version.h "$(OutDir)"\include\libavformat
+mkdir "$(OutDir)"\licenses
+copy ..\COPYING.GPLv3 "$(OutDir)"\licenses\ffmpeg.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist ..\config.asm (
+del ..\config.asm
+)
+if exist ..\libavutil\avconfig.h (
+del ..\libavutil\avconfig.h
+)
+if exist ..\libavutil\ffversion.h (
+del ..\libavutil\ffversion.h
+)
+if exist "$(OutDir)"\include\libavformat (
+rd /s /q "$(OutDir)"\include\libavformat
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MSC_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Compact2013_SDK_GSeries'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_AV_CONFIG_H;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0502;_LIB;_DEBUG;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <EnableAnsiAliasing Condition="'$(PlatformToolset)'!='Intel C++ Compiler XE 13.0'">true</EnableAnsiAliasing>
+      <ForcedIncludeFiles>compat.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>ws2.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\;$(ProjectDir)\..\..\prebuilt\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
@@ -618,19 +728,17 @@ cd $(ProjectDir)
       <ForcedIncludeFiles>compat.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <FloatingPointModel>Precise</FloatingPointModel>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>ws2_32.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
@@ -689,17 +797,15 @@ cd $(ProjectDir)
       <ForcedIncludeFiles>compat.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <FloatingPointModel>Precise</FloatingPointModel>
       <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x86\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>ws2_32.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\lib\x86\;$(ProjectDir)\..\..\prebuilt\lib\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
@@ -737,6 +843,84 @@ cd $(ProjectDir)
       <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_MSC_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <C99WRAP>
+      <IncludePaths>.\;..\;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</IncludePaths>
+      <PreprocessorDefinitions>_MSC_VER=1700;WIN32;_WINDOWS;HAVE_AV_CONFIG_H;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0502;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreIncludeFiles>compat.h</PreIncludeFiles>
+      <AdditionalOptions>/nologo /D "_UNICODE" /D "UNICODE" %(AdditionalOptions)</AdditionalOptions>
+    </C99WRAP>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Compact2013_SDK_GSeries'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_AV_CONFIG_H;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0502;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\;..\;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <C99Support>true</C99Support>
+      <EnableAnsiAliasing Condition="'$(PlatformToolset)'!='Intel C++ Compiler XE 13.0'">true</EnableAnsiAliasing>
+      <ForcedIncludeFiles>compat.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+    <Lib>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>ws2.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir)\;$(ProjectDir)\..\..\prebuilt\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\libavformat
+copy ..\libavformat\avformat.h "$(OutDir)"\include\libavformat
+copy ..\libavformat\avio.h "$(OutDir)"\include\libavformat
+copy ..\libavformat\version.h "$(OutDir)"\include\libavformat
+mkdir "$(OutDir)"\licenses
+copy ..\COPYING.GPLv3 "$(OutDir)"\licenses\ffmpeg.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist ..\config.h (
+del ..\config.h
+)
+if exist ..\version.h (
+del ..\version.h
+)
+if exist ..\config.asm (
+del ..\config.asm
+)
+if exist ..\libavutil\avconfig.h (
+del ..\libavutil\avconfig.h
+)
+if exist ..\libavutil\ffversion.h (
+del ..\libavutil\ffversion.h
+)
+if exist "$(OutDir)"\include\libavformat (
+rd /s /q "$(OutDir)"\include\libavformat
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MSC_VER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <C99WRAP>
+      <IncludePaths>.\;..\;$(OutDir)\include;$(ProjectDir)\..\..\prebuilt\include;%(AdditionalIncludeDirectories)</IncludePaths>
+      <PreprocessorDefinitions>_MSC_VER=1700;WIN32;_WINDOWS;HAVE_AV_CONFIG_H;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0502;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/nologo /MT /O1 /Ob2 /D "UNDER_CE" /D "WINCE" /D "_WIN32_WCE=0x800" /D "x86" /D "_X86_" /D "_UNICODE" /D "UNICODE" %(AdditionalOptions)</AdditionalOptions>
+      <PreIncludeFiles>compat.h</PreIncludeFiles>
+    </C99WRAP>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -756,16 +940,14 @@ cd $(ProjectDir)
       <ForcedIncludeFiles>compat.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <FloatingPointModel>Precise</FloatingPointModel>
       <AdditionalOptions Condition="$([System.String]::Copy($(PlatformToolset)).Contains('Intel'))">/Qvec- /Qsimd- %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
+      <AdditionalOptions Condition="'$(AdditionalOptions)' == '' and '$(VisualStudioVersion)' != '12.0'">%(AdditionalOptions)</AdditionalOptions>
       <DisableSpecificWarnings>4244;4267;4018;4146;4028;4996;4090;4114;4308;4305;4005;4101;4554;4307;4273;4133;4544;4334;4293;4047;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Lib>
       <TargetMachine>MachineX64</TargetMachine>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\lib\x64\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalDependencies>ws2_32.lib;Secur32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(OutDir)\lib\x64\;$(ProjectDir)\..\..\prebuilt\lib\x64\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>/IGNORE:4006,4221,4049,4217,4197 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
@@ -805,4 +987,7 @@ cd $(ProjectDir)
     </ResourceCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\c99wrap.targets" />
+  </ImportGroup>
 </Project>

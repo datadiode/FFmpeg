@@ -204,7 +204,7 @@ static int file_open(URLContext *h, const char *filename, int flags)
     FileContext *c = h->priv_data;
     int access;
     int fd;
-    struct stat st;
+    struct _stat st;
 
     av_strstart(filename, "file:", &filename);
 
@@ -227,7 +227,11 @@ static int file_open(URLContext *h, const char *filename, int flags)
         return AVERROR(errno);
     c->fd = fd;
 
-    h->is_streamed = !fstat(fd, &st) && S_ISFIFO(st.st_mode);
+#ifdef _WIN32_WCE
+    h->is_streamed = 0;
+#else
+    h->is_streamed = !_fstat(fd, &st) && S_ISFIFO(st.st_mode);
+#endif
 
     /* Buffer writes more than the default 32k to improve throughput especially
      * with networked file systems */
@@ -244,9 +248,14 @@ static int64_t file_seek(URLContext *h, int64_t pos, int whence)
     int64_t ret;
 
     if (whence == AVSEEK_SIZE) {
-        struct stat st;
-        ret = fstat(c->fd, &st);
+#ifdef _WIN32_WCE
+        ret = _filelength(c->fd);
+        return ret < 0 ? AVERROR(errno) : ret;
+#else
+        struct _stat st;
+        ret = _fstat(c->fd, &st);
         return ret < 0 ? AVERROR(errno) : (S_ISFIFO(st.st_mode) ? 0 : st.st_size);
+#endif
     }
 
     ret = lseek(c->fd, pos, whence);

@@ -40,23 +40,6 @@
 #endif
 #endif
 
-#ifdef _WIN32
-#  include <fcntl.h>
-#  ifdef lseek
-#   undef lseek
-#  endif
-#  define lseek(f,p,w) _lseeki64((f), (p), (w))
-#  ifdef stat
-#   undef stat
-#  endif
-#  define stat _stati64
-#  ifdef fstat
-#   undef fstat
-#  endif
-#  define fstat(f,s) _fstati64((f), (s))
-#endif /* defined(_WIN32) */
-
-
 #ifdef __ANDROID__
 #  if HAVE_UNISTD_H
 #    include <unistd.h>
@@ -189,7 +172,7 @@ fallback:                                                 \
 }
 
 DEF_FS_FUNCTION2(access, _waccess, _access, int)
-DEF_FS_FUNCTION2(stat, _wstati64, _stati64, struct stat*)
+DEF_FS_FUNCTION2(stat, _wstat, _stat, struct _stat*)
 
 static inline int win32_rename(const char *src_utf8, const char *dest_utf8)
 {
@@ -208,31 +191,13 @@ static inline int win32_rename(const char *src_utf8, const char *dest_utf8)
         goto fallback;
     }
 
-    ret = MoveFileExW(src_w, dest_w, MOVEFILE_REPLACE_EXISTING);
+    ret = _wrename(src_w, dest_w);
     av_free(src_w);
     av_free(dest_w);
-    // Lacking proper mapping from GetLastError() error codes to errno codes
-    if (ret)
-        errno = EPERM;
     return ret;
 
 fallback:
-    /* filename may be be in CP_ACP */
-#if !HAVE_UWP
-    ret = MoveFileExA(src_utf8, dest_utf8, MOVEFILE_REPLACE_EXISTING);
-    if (ret)
-        errno = EPERM;
-#else
-    /* Windows Phone doesn't have MoveFileExA, and for Windows Store apps,
-     * it is available but not allowed by the app certification kit. However,
-     * it's unlikely that anybody would input filenames in CP_ACP there, so this
-     * fallback is kept mostly for completeness. Alternatively we could
-     * do MultiByteToWideChar(CP_ACP) and use MoveFileExW, but doing
-     * explicit conversions with CP_ACP is allegedly forbidden in windows
-     * store apps (or windows phone), and the notion of a native code page
-     * doesn't make much sense there. */
     ret = rename(src_utf8, dest_utf8);
-#endif
     return ret;
 }
 

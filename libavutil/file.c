@@ -55,7 +55,7 @@ int av_file_map(const char *filename, uint8_t **bufptr, size_t *size,
 {
     FileLogContext file_log_ctx = { &file_log_ctx_class, log_offset, log_ctx };
     int err, fd = avpriv_open(filename, O_RDONLY);
-    struct stat st;
+    struct _stat st;
     av_unused void *ptr;
     off_t off_size;
     char errbuf[128];
@@ -68,13 +68,24 @@ int av_file_map(const char *filename, uint8_t **bufptr, size_t *size,
         return err;
     }
 
-    if (fstat(fd, &st) < 0) {
+#ifdef _WIN32_WCE
+    st.st_size = _filelength(fd);
+    if (st.st_size < 0) {
+        err = AVERROR(errno);
+        av_strerror(err, errbuf, sizeof(errbuf));
+        av_log(&file_log_ctx, AV_LOG_ERROR, "Error occurred in filelength(): %s\n", errbuf);
+        close(fd);
+        return err;
+    }
+#else
+    if (_fstat(fd, &st) < 0) {
         err = AVERROR(errno);
         av_strerror(err, errbuf, sizeof(errbuf));
         av_log(&file_log_ctx, AV_LOG_ERROR, "Error occurred in fstat(): %s\n", errbuf);
         close(fd);
         return err;
     }
+#endif
 
     off_size = st.st_size;
     if (off_size > SIZE_MAX) {

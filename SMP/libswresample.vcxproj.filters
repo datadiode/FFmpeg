@@ -45,13 +45,7 @@
     </YASM>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\libswresample\audioconvert.c">
-      <Filter>Source Files\libswresample</Filter>
-    </ClCompile>
     <ClCompile Include="..\libswresample\dither.c">
-      <Filter>Source Files\libswresample</Filter>
-    </ClCompile>
-    <ClCompile Include="..\libswresample\options.c">
       <Filter>Source Files\libswresample</Filter>
     </ClCompile>
     <ClCompile Include="..\libswresample\resample_dsp.c">
@@ -92,5 +86,13 @@
     <ClInclude Include="..\libswresample\version.h">
       <Filter>Header Files\libswresample</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\libswresample\audioconvert.c">
+      <Filter>Source Files\libswresample</Filter>
+    </C99WRAP>
+    <C99WRAP Include="..\libswresample\options.c">
+      <Filter>Source Files\libswresample</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>

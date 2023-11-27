@@ -31,16 +31,16 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\libpostproc\postprocess.c">
-      <Filter>Source Files\libpostproc</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\libpostproc\postprocess.h">
       <Filter>Header Files\libpostproc</Filter>
     </ClInclude>
     <ClInclude Include="..\libpostproc\version.h">
       <Filter>Header Files\libpostproc</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <C99WRAP Include="..\libpostproc\postprocess.c">
+      <Filter>Source Files\libpostproc</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>
