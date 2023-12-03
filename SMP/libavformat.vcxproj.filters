@@ -1397,5 +1397,8 @@
     <C99WRAP Include="..\libavformat\yuv4mpegenc.c">
       <Filter>Source Files\libavformat</Filter>
     </C99WRAP>
+    <C99WRAP Include="..\libavformat\tls_wolfssl.c">
+      <Filter>Source Files\libavformat</Filter>
+    </C99WRAP>
   </ItemGroup>
 </Project>
